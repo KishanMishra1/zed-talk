@@ -1,0 +1,61 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Hlw", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hi I'm zed ! Welcome to zed-grocery store .","Hey Zed this side ! Welcome to zed-grocery store ."],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time","goodbye"],
+         "responses": ["See you later, Thanks for visiting !", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "admin",
+         "patterns": ["admin"],
+         "responses": ["This chat-bot is created by Kishan Mishra"],
+         "context": [""]
+        },
+        {"tag": "hours",
+         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ,"opening time"],
+         "responses": ["We're open every day 9am-11pm", "Our hours are 9am-11pm every day"]
+        },
+        {"tag": "address",
+         "patterns": ["send address", "proper address", "Can u tell your shop location ?","Location ?"],
+         "responses": ["zedcode, near patia ,bbsr,Odisha"],
+         "context": [""]
+        },
+        {"tag": "items",
+         "patterns": ["Items available ", "today's items", "offers","grocery","vegetable rates"],
+         "responses": ["Items Available: \n1.Milk (regular), (0.25 liter)\t\t 13.28 ₹\n2.Loaf of Fresh White Bread (125.00 g)\t\t 9.30 ₹\n3.Rice (white), (0.10 kg)\t\t 5.48 ₹\n4.Eggs (regular) (2.40) \t\t 12.80 ₹\n5.Chicken Fillets (0.15 kg)\t\t 45.00 ₹\n Check more on the website : zed_grocery_store.in"],
+         "context": [""]
+        },
+        {"tag": "order",
+         "patterns": ["order ","place an order","i want to place an order","more","more orders"],
+         "responses": ["Sure ! Please Enter the Item Name and quantity"],
+         "context": ["Item_name","Item_quantity"]
+        },
+        {"tag": "done",
+         "patterns": ["done","that much","this much","over" ],
+         "responses": ["Your order has been accepted !!"],
+         "context": [""]
+        },
+        {"tag": "late",
+         "patterns": ["delivery late","where is my orders","delivered late","why it taking so much time","taking time"],
+         "responses": ["Have patience , we assigned a human to deliver your orders not robot !","Have Patience ,your estimated delivery time is still on !"],
+         "context": [""]
+        },
+        {"tag": "call",
+         "patterns": ["I want to call delivery boy","call delivery boy ","call carrier"],
+         "responses": ["Please drop your order id "],
+         "context": ["search_order_id"]
+        },
+        {"tag": "thank",
+         "patterns": ["Appreciated","Thanks","Thank you","Nice work"],
+         "responses": ["Its my Pleasure","I'm happy to serve you !","You welcome"],
+         "context": [""]
+        },
+        {"tag": "payments",
+         "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ,"Do you accept online payment ?","online payment accepted"],
+         "responses": ["Payment Types:\n1. Customers will make online payments while ordering both while delivery and takeaway.Supported online payment providers: Stripe (Apple Pay and Google Pay), PayPal, PhonePay, and Paytm.\n2.Card : Customers will pay with a card to the delivery person during delivery (the delivery person must carry the card terminal on them) or at the cashier desk in your restaurant while picking up the order (the cashier desk must have a card terminal).\n3.Cash : Customers will pay with cash to the delivery person or at the cashier desk in your restaurant while picking up the order while takeaway."]
+        }
+   ]
+}
