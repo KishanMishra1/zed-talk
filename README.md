@@ -1,2 +1,2 @@
 # zed-talk
-- marked for alpha testing 
+- marked for beta testing 
